@@ -11,7 +11,7 @@ section {
     width: 100%;
 }
 
-.login-container {
+.register-container {
     background-color: #fff;
     padding: 40px;
     border-radius: 8px;
@@ -21,6 +21,7 @@ section {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    color: black;
 }
 
 h1 {
@@ -64,16 +65,15 @@ h1 {
 
 .options input[type="checkbox"] {
     margin-right: 5px;
-    /* color: black; */
 }
 
-.login-container span {
+/* .register-container span {
     color: black;
-}
+} */
 
 
 
-.login-button {
+.register-button {
     color: rgb(0, 71, 171);
     display: inline-block;
     padding: 6px 12px;
@@ -97,7 +97,7 @@ h1 {
     
 }
 
-.login-button:hover {
+.register-button:hover {
     background-color: rgb(0, 71, 171);
     color: white;
 }

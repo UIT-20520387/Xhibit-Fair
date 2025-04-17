@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="../styles/shared.css">
     <link rel="stylesheet" href="../styles/login.css">
+    <link rel="stylesheet" href="../styles/register.css">
     <title>Xhibit Fair - Hội Chợ Triển Lãm</title>
 </head>
 
@@ -46,13 +47,15 @@
 
     <main>
         <section>
-            <div class="login-container">
-                <h1>ĐĂNG NHẬP</h1>
-                <form id="login-form">
+            <div class="register-container">
+                <h1>ĐĂNG KÝ</h1>
+                <form id="register-form">
                     <div class="input-group">
-                        <input type="text" id="username" name="username" placeholder="Tên tài khoản hoặc Địa chỉ email">
+                        <label for="fullname">Họ tên:</label>
+                        <input type="text" id="fullname" name="fullname" placeholder="Nhập họ tên">
                     </div>
                     <div class="input-group">
+                        <label for="Họ tên"></label>
                         <input type="password" id="password" name="password" placeholder="Mật khẩu">
                     </div>
                     <div class="options">
@@ -62,10 +65,10 @@
                     </div>
                     <section class="flex-list">
                         <div class="signup-link">
-                            <span>Chưa có Tài khoản</span> <a href="../html/register.html"><strong>ĐĂNG KÝ NGAY</strong></a>
+                            <span>Chưa có Tài khoản</span> <a href="#"><strong>ĐĂNG KÝ NGAY</strong></a>
                         </div>
                         <div>
-                            <button type="submit" class="login-button">Đăng nhập</button>
+                            <button type="submit" class="register-button">Gửi</button>
                         </div>
                     </section>  
                 </form>
