@@ -1,0 +1,266 @@
+body {
+  margin: 0;
+  margin-top: 60px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #111;
+  color: white;
+}
+
+/* Khi cuộn xuống */
+.header.shrink {
+  padding: 5px 20px;
+}
+
+.header.shrink .logo img {
+  height: 30px; /* nhỏ lại */
+}
+
+.header.shrink .top-buttons {
+  display: none; /* ẩn đi */
+}
+
+/* Menu tổng */
+.menu-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex: 1;
+  margin-left: 40px;
+}
+
+/* Nhóm trên */
+.top-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 4px;
+}
+
+.top-buttons a {
+  font-size: 13px;
+  color: white;
+  text-decoration: none;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.top-buttons a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.top-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.header {
+  background-color: black;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed; /* Giữ header ở vị trí cố định */
+  top: 0; /* Đặt phần header luôn ở trên cùng */
+  width: 100%; /* Đảm bảo header chiếm toàn bộ chiều rộng */
+  z-index: 1000; /* Đảm bảo header luôn ở trên các phần tử khác */  
+  transition: all 0.3s ease;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 1440px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  color: #fdee00;
+}
+
+.logo img {
+  height: 40px;
+  margin-bottom: 5px;
+}
+
+.menu a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  color: #fdee00;
+}
+
+.contact-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-area i {
+  color: yellow;
+}
+
+.contact-area span {
+  font-weight: bold;
+  color: yellow;
+}
+
+.btn-booking {
+  background-color: #d4c100;
+  border: none;
+  color: black;
+  padding: 8px 12px;
+  font-weight: bold;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.hero-split {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  gap: 40px;
+  background-color: white;
+}
+
+.hero-left,
+.hero-right {
+  flex: 1;
+}
+
+.banner-slider {
+  position: relative;
+}
+
+.banner {
+  width: 100%;
+  display: none;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(255, 254, 254, 0.2);
+}
+
+.banner.active {
+  display: block;
+}
+
+.slider-dots {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: rgb(65, 54, 54);
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: #003399;
+}
+
+.hero-right h2 {
+  font-size: 28px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.event-list .event {
+  margin-bottom: 16px;
+  border-left: 4px solid #003399;
+  padding-left: 12px;
+  border: 2px solid #ddd; /* Thêm viền ngoài màu xám nhạt */
+  border-radius: 8px; /* Tùy chọn, để viền có góc bo tròn */
+  padding: 10px; /* Thêm khoảng cách giữa nội dung và viền */
+  background-color: #1567bd;
+}
+
+
+.event-pagination {
+  margin-top: 10px;
+  text-align: right;
+}
+
+.event-pagination button {
+  background: #003399;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  margin: 0 4px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.event-info {
+  flex: 1;
+}
+
+.event-info h1 {
+  font-size: 2.5em;
+  color: #fefefe;
+  margin-bottom: 10px;
+}
+
+.event-info p {
+  font-size: 1.1em;
+  margin: 8px 0;
+}
+
+.slider {
+  flex: 1;
+  max-width: 600px;
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.footer {
+  background-color: #003399;
+  color: white;
+  padding: 30px 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-left h2 {
+  font-size: 36px;
+  line-height: 1;
+}
+
+.footer-buttons button {
+  margin: 10px 10px 0 0;
+  padding: 10px 15px;
+  background: white;
+  color: #003399;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer-right iframe {
+  border-radius: 8px;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+}
