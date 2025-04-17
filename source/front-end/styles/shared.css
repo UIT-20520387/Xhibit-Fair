@@ -1,0 +1,75 @@
+body{
+    font-family: 'K2D', sans-serif;
+	font-size:14pt;
+	font-weight:500;
+	color: #ddd;
+	line-height:1.425em;
+	padding: 0;
+	background:#e9ebee;	
+}
+
+a {
+    cursor:pointer;
+	color:#002e87;
+}
+
+a:hover {
+    text-decoration:none;
+	color:#03BFCB;
+}
+
+/* a.disabled {
+    color:#bbb !important;
+} */
+
+h2, .h2,
+h3, .h3,
+h4, .h4 {
+	margin-top:0;
+	color:#002e87;
+    font-weight: normal;
+	font-family: 'Saira Semi Condensed', sans-serif;				 
+}
+
+h2, .h2 {
+	font-size:36pt;
+	font-weight:500;
+	margin-bottom:40px;
+}
+h3, .h3 {
+	font-size:30pt;
+	font-weight:500;
+	margin-bottom:40px;
+}
+
+p {
+	margin-bottom:30px;
+	
+}
+p:last-child {
+	margin-bottom:0;
+}
+
+.spacer-single {
+    width: 100%;
+    height: 30px;
+    display: block;
+    clear: both;
+}
+
+/* .text-uppercase{
+    text-transform: uppercase !important;
+} */
+
+login-container {
+	width: 500px;
+	height: 500px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.account {
+    align-items: center;
+}

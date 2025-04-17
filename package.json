@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.14.4"
+  },
+  "scripts": {
+    "build": "parcel build source/front-end/js/index.js --dist-dir dist --public-url ./",
+    "start": "live-server source/front-end/html",
+    "dev": "parcel watch source/front-end/js/index.js --dist-dir dist --public-url ./"
+  }
+}
