@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #111;
+    color: white;
+  }
+
+  /* Khi cuộn xuống */
+  .header.shrink {
+    padding: 5px 20px;
+  }
+  
+  .header.shrink .logo img {
+    height: 30px; /* nhỏ lại */
+  }
+  
+  .header.shrink .top-buttons {
+    display: none; /* ẩn đi */
+  }
+  
+  /* Menu tổng */
+  .menu-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex: 1;
+    margin-left: 40px;
+  }
+  
+  /* Nhóm trên */
+  .top-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 4px;
+  }
+  
+  .top-buttons a {
+    font-size: 13px;
+    color: white;
+    text-decoration: none;
+    padding: 2px 6px;
+    border-radius: 4px;
+  }
+  
+  .top-buttons a:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .top-banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .header {
+    background-color: black;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed; /* Giữ header ở vị trí cố định */
+    top: 0; /* Đặt phần header luôn ở trên cùng */
+    width: 100%; /* Đảm bảo header chiếm toàn bộ chiều rộng */
+    z-index: 1000; /* Đảm bảo header luôn ở trên các phần tử khác */  
+    transition: all 0.3s ease;
+  }
+
+  .container {
+    display: flex;
+    width: 100%;
+    max-width: 1440px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    display: flex;
+    flex-direction: column;
+    color: #fdee00;
+  }
+  
+  .logo img {
+    height: 40px;
+    margin-bottom: 5px;
+  }
+  
+  .menu a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .menu a:hover {
+    color: #fdee00;
+  }
+  
+  .contact-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .contact-area i {
+    color: yellow;
+  }
+  
+  .contact-area span {
+    font-weight: bold;
+    color: yellow;
+  }
+  
+  .btn-booking {
+    background-color: #d4c100;
+    border: none;
+    color: black;
+    padding: 8px 12px;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  main {
+    padding-top: 100px;
+    width: 100%;
+  }
+
+  .footer {
+    background-color: #003399;
+    color: white;
+    width: 100%;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px 20px;
+  }
+  
+  .footer-left h2 {
+    font-size: 36px;
+    line-height: 1;
+  }
+  
+  .footer-buttons button {
+    margin: 10px 10px 0 0;
+    padding: 10px 15px;
+    background: white;
+    color: #003399;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .footer-right iframe {
+    border-radius: 8px;
+  }
+  
+  .footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+  }

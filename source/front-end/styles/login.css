@@ -1,0 +1,124 @@
+body {
+    /* font-family: sans-serif; */
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+section {
+    width: 100%;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    margin: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+h1 {
+    color: rgb(0, 71, 171); 
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: rgb(77, 142, 233);
+    box-shadow: 0 0 5px rgba(30, 85, 161, 0.5);
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.options label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.options input[type="checkbox"] {
+    margin-right: 5px;
+    /* color: black; */
+}
+
+.login-container span {
+    color: black;
+}
+
+
+
+.login-button {
+    color: rgb(0, 71, 171);
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1.428571429;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid;
+    border-color: rgb(0, 71, 171);
+    border-radius: 4px;
+    
+}
+
+.login-button:hover {
+    background-color: rgb(0, 71, 171);
+    color: white;
+}
+
+.signup-link {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.signup-link a {
+    color: rgb(0, 71, 171); 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-link a:hover {
+    color: rgb(66, 139, 202);
+}
+
+.flex-list {
+    display: flex;
+    justify-content: space-between;
+}
