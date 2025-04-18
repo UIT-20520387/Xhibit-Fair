@@ -32,11 +32,19 @@ h1 {
 
 .input-group {
     margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
 }
+
+.input-group label {
+    text-align: right;
+    padding: 10px;
+}
+
 
 .input-group input {
     width: 100%;
-    padding: 12px;
+    padding: 10px;
     border: 1px solid rgb(221, 221, 221);
     border-radius: 4px;
     box-sizing: border-box;
@@ -67,12 +75,6 @@ h1 {
     margin-right: 5px;
 }
 
-/* .register-container span {
-    color: black;
-} */
-
-
-
 .register-button {
     color: rgb(0, 71, 171);
     display: inline-block;
@@ -94,6 +96,7 @@ h1 {
     border: 1px solid;
     border-color: rgb(0, 71, 171);
     border-radius: 4px;
+    size: 50px;
     
 }
 
