@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../styles/shared.css">
+    <link rel="stylesheet" href="../styles/register.css">
+    <title>Xhibit Fair - Hội Chợ Triển Lãm</title>
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="logo.png" alt="SECC Logo">
+                <span>BRING EVENTS TO LIFE</span>
+            </div>
+
+            <div class="menu-wrapper">
+                <!-- Nhóm trên: Top buttons -->
+                <div class="top-buttons">
+                    <a href="#">Về chúng tôi</a>
+                    <a href="#">Có gì trên trang web</a>
+                    <a href="#">Làm thế nào để đến đây</a>
+                    <a href="#">Đăng nhập</a>
+                </div>
+
+                <!-- Menu -->
+                <nav class="menu">
+                    <a href="#">TRANG CHỦ</a>
+                    <a href="#">SỰ KIỆN</a>
+                    <a href="#">THAM DỰ & THAM QUAN</a>
+                </nav>
+
+                <!-- Booking + Phone -->
+                <div class="contact-area">
+                    <i class="fas fa-phone"></i> <span>0868-853-033</span>
+                    <button class="btn-booking">ĐẶT CHỖ ĐỊA ĐIỂM</button>
+                </div>
+            </div>
+    </header>
+    <main>
+        <main>
+            <section>
+                <div class="register-container">
+                    <h1>ĐĂNG KÝ GIAN HÀNG</h1>
+                    <form id="register-form">
+                        <div class="input-group">
+                            <label for="fullname"> Họ tên: </label>
+                            <input type="text" id="fullname" name="fullname" required placeholder="Nhập họ tên">
+                        </div>
+                        <div class="options">
+                            <label for="gender"> Giới tính: </label>
+                            <input type="checkbox" name="male"> <span>Nam </span>
+                            <input type="checkbox" name="female"> <span>Nữ </span>
+                        </div>
+                        <div class="input-group">
+                            <label for="phone-number"> SĐT: </label>
+                            <input type="tel" id="phone-number" name="phone-number" required placeholder="Nhập SĐT">
+                        </div>
+                        <div class="input-group">
+                            <label for="email"> Email: </label>
+                            <input type="email" id="email" name="email" required placeholder="Nhập email">
+                        </div>
+                        <div class="input-group">
+                            <label for="position"> Chức danh: </label>
+                            <input type="text" id="position" name="position" required placeholder="Nhập chức danh">
+                        </div>
+                        <div class="input-group">
+                            <label for="enterprise-name"> Tên doanh nghiệp: </label>
+                            <input type="text" id="enterprise-name" name="enterprise-name" required
+                                placeholder="Nhập tên doanh nghiệp">
+                        </div>
+                        <div class="input-group">
+                            <label for="website-url"> Website: </label>
+                            <input type="url" id="website-url" name="website-url" required
+                                placeholder="Nhập URL website">
+                        </div>
+                        <div class="input-group">
+                            <label for="booth"> Gian hàng: </label>
+                            <input type="text" id="booth" name="booth" required
+                                placeholder="Nhập thứ tự gian hàng">
+                        </div>
+                        <div class="input-group">
+                            <label for="product-exhibit"> Sản phẩm triển lãm: </label>
+                            <input type="text" id="product-exhibit" name="product-exhibit" required
+                                placeholder="Nhập các dòng sản phẩm">
+                        </div>
+                        <div>
+                            <button type="submit" class="register-button">Gửi</button>
+                        </div>
+
+                    </form>
+                </div>
+            </section>
+        </main>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <h2>LIÊN HỆ</h2>
+                <div class="footer-buttons">
+                    <button>Liên lạc với chúng tôi</button>
+                    <button>Làm sao để đến đây</button>
+                </div>
+            </div>
+            <div class="footer-right">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.27712961362!2d106.80047381037305!3d10.870014157416291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527587e9ad5bf%3A0xafa66f9c8be3c91!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2jhu4cgVGjDtG5nIHRpbiAtIMSQSFFHIFRQLkhDTQ!5e1!3m2!1svi!2s!4v1744903144577!5m2!1svi!2s"
+                    width="800" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p><i class="fa fa-map-marker-alt"></i>Hàn Thuyên, khu phố 6 P, Thủ Đức, Hồ Chí Minh, Việt Nam</p>
+            <p><i class="fa fa-envelope"></i> 22520601@gm.uit.edu.vn</p>
+        </div>
+    </footer>
+</body>
+
+</html>
