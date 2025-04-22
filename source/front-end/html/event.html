@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Event Calendar</title>
+  <link rel="stylesheet" href="event.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+
+    <div class="container">
+      <!-- Logo -->
+      <div class="logo">
+        <img src="logo.png" alt="SECC Logo">
+        <span>BRING EVENTS TO LIFE</span>
+      </div>
+
+      <div class="menu-wrapper">
+        <!-- Nhóm trên: Top buttons -->
+        <div class="top-buttons">
+          <a href="#">Về chúng tôi</a>
+          <a href="#">Có gì trên trang web</a>
+          <a href="#">Làm thế nào để đến đây</a>
+          <a href="#">Đăng nhập</a>
+        </div>  
+
+      <!-- Menu -->
+      <nav class="menu">
+        <a href="index.html">TRANG CHỦ</a>
+        <a href="event.html">SỰ KIỆN</a>
+        <a href="#">THAM DỰ & THAM QUAN</a>
+      </nav>
+
+      <!-- Booking + Phone -->
+      <div class="contact-area">
+        <i class="fas fa-phone"></i> <span>0868-853-033</span>
+        <button class="btn-booking">ĐẶT VÉ</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="hero-banner">
+    <div class="banner-title">LỊCH SỰ KIỆN</div>
+  </section>
+
+  <!-- Filters -->
+  <div class="filters">
+    <div class="filter-group">
+      <label>From:</label>
+      <input type="date" />
+    </div>
+    <div class="filter-group">
+      <label>To:</label>
+      <input type="date" />
+    </div>
+    <div class="filter-group">
+      <input type="text" placeholder="Tìm sự kiện..." />
+    </div>
+    <div class="filter-group checkbox-group">
+      <input type="checkbox" id="past" />
+      <label for="past">Hiện sự kiện đã qua</label>
+    </div>
+    <button class="search-btn">Tìm kiếm</button>
+  </div>
+  
+
+  <!-- Title -->
+  <h1 class="section-title">LỊCH SỰ KIỆN 2025</h1>
+
+  <!-- Event List -->
+  <section class="event-list">
+    <div class="event-card">
+      <div class="event-image">
+        <img src="../images/foodex1.png" alt="Event Image" />
+      </div>
+      <div class="event-info">
+        <h2>GLOBAL SOURCING FAIR VIETNAM 2025</h2>
+        <p>The Must-Attend International Expo to Source Home & Gifts...</p>
+        <ul>
+          <li>📅 24 - 26.04.2025</li>
+          <li>🕒 09:00–17:00</li>
+          <li>📍 Exhibition Hall A & B1</li>
+        </ul>
+        <div class="event-buttons">
+          <a href="#">General Information</a>
+          <a href="#">Brochure</a>
+          <a href="#">Post show report</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Event 2 -->
+    <div class="event-card">
+      <div class="event-image">
+        <img src="../images/foodex2.png" alt="Event Image" />
+      </div>
+      <div class="event-info">
+        <h2>SMART CITY ASIA 2025</h2>
+        <p>Smart City, AI, Big Data, and more</p>
+        <ul>
+          <li>📅 07 - 09.05.2025</li>
+          <li>🕒 09:00–17:00</li>
+          <li>📍 Exhibition Hall A</li>
+        </ul>
+        <div class="event-buttons">
+          <a href="#">General Information</a>
+          <a href="#">Brochure</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
