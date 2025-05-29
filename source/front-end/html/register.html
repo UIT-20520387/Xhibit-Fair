@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="../styles/shared.css">
     <link rel="stylesheet" href="../styles/register_shared.css">
+    <script type="module" src="../../back-end/firebase_auth.js"></script>
     <title>Xhibit Fair - Hội Chợ Triển Lãm</title>
 </head>
 
@@ -26,12 +27,12 @@
                     <a href="#">Về chúng tôi</a>
                     <a href="#">Có gì trên trang web</a>
                     <a href="#">Làm thế nào để đến đây</a>
-                    <a href="#">Đăng nhập</a>
+                    <a href="../html/login.html">Đăng nhập</a>
                 </div>
 
                 <!-- Menu -->
                 <nav class="menu">
-                    <a href="#">TRANG CHỦ</a>
+                    <a href="../html/index.html">TRANG CHỦ</a>
                     <a href="#">SỰ KIỆN</a>
                     <a href="#">THAM DỰ & THAM QUAN</a>
                 </nav>
@@ -49,6 +50,7 @@
             <div class="register-container">
                 <h1>ĐĂNG KÝ</h1>
                 <form id="register-form">
+                    <div id="registerMessage" class="messageDiv" style="display: none;"></div>
                     <div class="input-group">
                         <label for="fullname"> Họ tên: </label>
                         <input type="text" id="fullname" name="fullname" required placeholder="Nhập họ tên">
@@ -56,8 +58,8 @@
                     <div class="input-group">
                         <label for="gender"> Giới tính: </label>
                         <select id="gender" name="gender">
-                            <option value="1">Nam</option>
-                            <option value="2">Nữ</option>
+                            <option value="male">Nam</option>
+                            <option value="female">Nữ</option>
                         </select>
                     </div>
                     <div class="input-group">
@@ -79,7 +81,7 @@
                             </label>
                         </div>
                         <div>
-                            <button type="submit" class="register-button">Gửi</button>
+                            <button type="submit" id="register-btn" class="register-button">Gửi</button>
                         </div>
                     </section>  
                 </form>

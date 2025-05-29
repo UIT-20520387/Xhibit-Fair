@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="../styles/shared.css">
     <link rel="stylesheet" href="../styles/login.css">
+    <script type="module" src="../../back-end/firebase_auth.js"></script>
     <title>Xhibit Fair - Hội Chợ Triển Lãm</title>
 </head>
 
@@ -26,12 +27,12 @@
                     <a href="#">Về chúng tôi</a>
                     <a href="#">Có gì trên trang web</a>
                     <a href="#">Làm thế nào để đến đây</a>
-                    <a href="#">Đăng nhập</a>
+                    <a href="../html/login.html">Đăng nhập</a>
                 </div>
 
                 <!-- Menu -->
                 <nav class="menu">
-                    <a href="#">TRANG CHỦ</a>
+                    <a href="../html/index.html">TRANG CHỦ</a>
                     <a href="#">SỰ KIỆN</a>
                     <a href="#">THAM DỰ & THAM QUAN</a>
                 </nav>
@@ -49,25 +50,27 @@
             <div class="login-container">
                 <h1>ĐĂNG NHẬP</h1>
                 <form id="login-form">
+                    <div id="loginMessage" class="messageDiv" style="display: none;"></div>
                     <div class="input-group">
-                        <input type="text" id="username" name="username" placeholder="Tên tài khoản hoặc Địa chỉ email">
+                        <input type="text" id="email" name="email" placeholder="Địa chỉ email">
                     </div>
                     <div class="input-group">
                         <input type="password" id="password" name="password" placeholder="Mật khẩu">
                     </div>
                     <div class="options">
                         <label>
-                            <input type="checkbox" name="remember"> <span>Ghi nhớ Tài khoản</span> 
+                            <input type="checkbox" name="remember"> <span>Ghi nhớ Tài khoản</span>
                         </label>
                     </div>
                     <section class="flex-list">
                         <div class="signup-link">
-                            <span>Chưa có Tài khoản</span> <a href="../html/register.html"><strong>ĐĂNG KÝ NGAY</strong></a>
+                            <span>Chưa có Tài khoản</span> <a href="../html/register.html"><strong>ĐĂNG KÝ
+                                    NGAY</strong></a>
                         </div>
                         <div>
-                            <button type="submit" class="login-button">Đăng nhập</button>
+                            <button type="submit" id="login-btn" class="login-button">Đăng nhập</button>
                         </div>
-                    </section>  
+                    </section>
                 </form>
             </div>
         </section>
